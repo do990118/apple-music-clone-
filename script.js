@@ -113,63 +113,67 @@
 // console.log(tree);
 
 
-// 16. 로꾸거
+// 21. set은 어떻게 만드나요?
 
-// const inputMessage = prompt("문장을 입력해 주세요.");
+/* 
+다음 중 set을 만드는 방법으로 올바른 것을 모두 고르시오.
 
-// function reverse(newMessage) {
-//   if (newMessage === null || /\s/g) {
-//     throw new Error("공백은 들어갈 수 없습니다");
-//   }
-//   const result = newMessage.split("").reverse().join("");
-//   console.log(result);
-// }
+1)  var x = {1, 2, 3, 5, 6, 7};
+2)  var x = {};
+3)  var x = new Set('javascript');
+4)  var x = new Set(range(5));
+5)  var x = new Set();
 
-// reverse(inputMessage);
+답: (3), (5)
 
+set는 중복을 허용하지 않으며, 키가 없는 값이 저장된다.
 
-// 17. 놀이기구 키 제한
+// Set 선언, 이터러블 객체를 전달받으면(대개 배열을 전달받음) 그 안의 값을 복사해 셋에 넣어준다.
+let set =new Set(iterable)
 
-// const inputHeight = +prompt('키를 입력해 주세요');
+생성자 함수의 이름은 대문자로 시작하고, 반드시 'new' 연산자를 붙여 실행한다
 
-// if(typeof inputHeight !== 'number'){
-//     alert('숫자만 입력해 주세요')
-// }else if(inputHeight < 0 || inputHeight > 300){
-//     alert('정확한 키를 입력해 주세요')
-// }else if(inputHeight >= 150){
-//     alert('어서 오세요')
-// }else{
-//     alert('입장하실 수 없습니다')
-// }
+function User(name) {
+  this.name = name;
+  this.isAdmin = false;
+}
 
+let user = new User("보라");
 
-// 18. 평균 점수
+ */
 
-// const inputKoreanScore = +prompt('국어 점수를 입력해 주세요')
-// const inputMathScore = +prompt('수학 점수를 입력해 주세요')
-// const inputEnglishScore = +prompt('영어 점수를 입력해 주세요')
+// 22. 배수인지 확인하기
 
-// const averageScore = (inputKoreanScore + inputMathScore + inputEnglishScore) / 3
+/* 
 
-// console.log(averageScore);
+다음 중 변수 i가 6의 배수인지 확인하는 방법으로 올바른 것은?
 
+1)  i / 6 == 0
+2)  i % 6 == 0
+3)  i & 6 == 0
+4)  i | 6 == 0
+5)  i // 6 == 0
 
-// 19. 제곱을 구하자
+(2)
 
-// const inputBottom = +prompt('밑을 입력해 주세요')
-// const inputQuotient = +prompt('지수를 입력해 주세요')
+*/
 
-// const power = inputBottom ** inputQuotient
+// 23. OX 문제
 
-// console.log(power)
+// X
 
+// 24. 대문자로 바꿔 주세요!
 
-// 20. 몫과 나머지
+// const name = prompt('이름을 입력해 주세요');
 
-// const inputNumberA = +prompt('나누어질 숫자를 입력하세요');
-// const inputNumberB = +prompt('나눌 숫자를 입력하세요');
+// console.log(name.toUpperCase());
 
-// const division = Math.floor(inputNumberA / inputNumberB);
-// const remainder = inputNumberA % inputNumberB;
+// 25. 원의 넓이를 구하세요
 
-// console.log(division, remainder)
+const inputRadius = prompt('반지름을 입력해 주세요')
+
+function calcCircleArea(r){
+    return Math.PI.toFixed(2) * (r * r);
+}
+
+console.log(calcCircleArea(inputRadius))
