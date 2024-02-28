@@ -112,7 +112,6 @@
 
 // console.log(tree);
 
-
 // 21. set은 어떻게 만드나요?
 
 /* 
@@ -170,10 +169,88 @@ let user = new User("보라");
 
 // 25. 원의 넓이를 구하세요
 
-const inputRadius = prompt('반지름을 입력해 주세요')
+// const inputRadius = prompt('반지름을 입력해 주세요')
 
-function calcCircleArea(r){
-    return Math.PI.toFixed(2) * (r * r);
-}
+// function calcCircleArea(r){
+//     return Math.PI.toFixed(2) * (r * r);
+// }
 
-console.log(calcCircleArea(inputRadius))
+// console.log(calcCircleArea(inputRadius))
+
+// function calc(){
+//     const n = prompt('반지름 입력');
+//     return 3.14 * (n**2);
+// }
+
+// 26. 행성 문제2
+
+// const planetName = {
+//   '수성': 'Mercury',
+//   '금성': 'Venus',
+//   '지구': 'Earth',
+//   '화성': 'Mars',
+//   '목성': 'Jupiter',
+//   '토성': 'Saturn',
+//   '천왕성': 'Uranos',
+//   '해왕성': 'Neptune'
+// }
+
+// const input = prompt('태양계 행성의 이름을 입력하세요');
+
+// if(input in planetName){
+//   console.log(planetName[input]);
+// }else if(!(input in planetName)){
+//   console.log('태양계를 벗어났습니다')
+// }
+
+// 27. 객체 만들기
+
+// const inputName = prompt('두 학생의 이름을 입력해 주세요').split(' ');
+// const inputScore = prompt('두 학생의 수학 점수를 입력해 주세요').split(' ');
+
+// const obj = {};
+
+// inputScore.forEach((item, index)=>{
+//   obj[inputName[index]] = item;
+// })
+
+// console.log(obj);
+
+// 28. 2-gram
+
+// const str = prompt('문자열을 입력해 주세요').split('');
+
+// for(i=0; i<str.length-1; i++){
+//   console.log(str[i] + ' ' + str [i+1])
+// }
+
+// 29. 대문자만 지나가세요
+
+// const str = prompt('알파벳을 입력해 주세요');
+
+// if (str === str.toUpperCase()){
+//   console.log('YES');
+// }else{
+//   console.log('NO');
+// }
+
+// 30. 문자열 속 문자 찾기
+
+// const inputStr = prompt("문자열을 입력해 주세요");
+// const str = prompt("찾을 문자열을 입력해 주세요");
+
+// const firstIndex = inputStr.indexOf(str);
+// // const last = str[str.length - 1];
+// // const lastIndex = inputStr.lastIndexOf(last);
+
+// // console.log(inputStr.slice(firstIndex, lastIndex + 1));
+
+// if(firstIndex >= 0){
+//   alert(
+//     `귀하가 찾는 문자열은 인덱스 번호 ${firstIndex} 번째부터 존재합니다`
+//   );
+// }else{
+//   alert(
+//     '귀하가 찾는 문자열이 존재하지 않습니다'
+//   );
+// }
